@@ -1,0 +1,280 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6faff;
+  color: #333;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+background-color: #00cccc;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 30px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.nav-logo {
+font-size: 24px;
+color: white;
+font-weight: bold;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 25px;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+padding: 8px 12px;
+border-radius: 20px;
+transition: background-color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.nav-login:hover {
+background-color: #009999;
+}
+
+.nav-login {
+background-color: rgb(18, 8, 8);
+color: #00cccc;
+font-weight: bold;
+}
+
+
+/* HEADER SECTION */
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #e6faff;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.header-text h1 {
+  font-size: 320px;
+  color: #b01111;
+  margin-bottom: 10px;
+  font-size: 130px;
+  color: #010547;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.header-text p {
+  font-size: 30px;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header-image {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.services h1 {
+  margin-bottom: 20px;
+}
+
+.services p {
+  background-color: #b366ff;
+  color: white;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  height: 100px;
+  font-size: 25px;
+}
+
+/* QUOTE */
+.quote {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 15px;
+  font-style: italic;
+  color: #444;
+}
+.quote p{
+    font-size: 45px;
+}
+
+/* SOLUTIONS SECTION */
+.solutions {
+  text-align: center;
+ padding-right: 50px;
+}
+
+.solutions h3 {
+  color: #008080;
+  margin-bottom: 30px;
+}
+
+.solution-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.solution-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solution-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.solution-item span {
+  font-weight: bold;
+}
+.solution-item span {
+font-weight: bold;
+background-color: #f1adf7;
+color: rgb(7, 7, 7);
+padding: 8px 16px;
+border-radius: 20px;
+margin-top: 5px;
+display: inline-block;
+}
+
+/* LOGIN */
+.login-section {
+text-align: center;
+margin: 60px 0;
+}
+
+.login-section p {
+font-size: 16px;
+margin: 5px 0;
+}
+
+.login-button {
+background-color: #00cccc;
+color: white;
+padding: 12px 30px;
+border-radius: 25px;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+display: inline-block;
+margin-top: 20px;
+transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+background-color: #009999;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #cceeff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+.footer p {
+    font-size: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+}
+
+   /* contact section */
+.contact-section {
+background-color: #f9f9f9;
+padding: 60px 20px;
+text-align: center;
+}
+
+.contact-section h2 {
+font-size: 28px;
+margin-bottom: 10px;
+color: #333;
+}
+
+.contact-section p {
+font-size: 16px;
+margin-bottom: 30px;
+color: #555;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+padding: 12px 15px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 10px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.contact-form button {
+background-color: #00cccc;
+color: white;
+padding: 12px;
+font-size: 16px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #009999;
+}
